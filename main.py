@@ -49,7 +49,7 @@ def remove_duplicates_from_slice(provided_slice: list[str]) -> list[str]:
 # Function to use Selenium to save HTML content of a URL to a local file
 def save_html_with_selenium(url: str, output_file: str) -> None:
     options = Options()  # Initialize Chrome options
-    # options.add_argument(argument="--headless=new")  # Run Chrome in new headless mode
+    options.add_argument(argument="--headless=new")  # Run Chrome in new headless mode
     options.add_argument(
         argument="--disable-blink-features=AutomationControlled"
     )  # Hide automation flags
